@@ -15,6 +15,7 @@ export  class SearchBar extends Component {
     e.preventDefault();
     const form = e.currentTarget;
     const input = form.elements.search.value;
+    console.log(input)
     this.props.onSubmit({ input });
   };
 
